@@ -9,9 +9,6 @@ function espresso_track_successful_sale_manual( $Transaction, $status_updates ){
 		if ($Primary_Registration instanceof EE_Registration) {
 			$Attendee = $Primary_Registration->attendee();
 			if ($Attendee instanceof EE_Attendee) {
-
-				
-
 				$email = $Attendee->email();
 				$referrer = $_COOKIE['ap_id'];
 
@@ -40,9 +37,6 @@ function espresso_track_successful_sale_gateway( $Transaction, $status_updates )
 		if ($Primary_Registration instanceof EE_Registration) {
 			$Attendee = $Primary_Registration->attendee();
 			if ($Attendee instanceof EE_Attendee) {
-
-				
-
 				$email = $Attendee->email();
 				$referrer = $_COOKIE['ap_id'];
 
